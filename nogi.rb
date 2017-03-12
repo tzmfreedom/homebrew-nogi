@@ -6,13 +6,13 @@ class Nogi < Formula
   version @@version
 
   if Hardware::CPU.is_64_bit?
-    @@binname = 'nogi-darwin64'
+    @@binname = 'nogi-darwin-amd64'
     url "https://github.com/tzmfreedom/nogi/releases/download/v#{@@version}/#{@@binname}"
-    sha256 '2ac1b4da1ae01bcdd5915e067c06de1f71c6205f052a1641cd74af6aaa2eda8e'
+    sha256 '010af0baeebab6f3d89fcd1e9d9278eb1f9607d4ba5d15bcb63efd68669d5eac'
   else
-    @@binname = 'nogi-darwin386'
+    @@binname = 'nogi-darwin-386'
     url "https://github.com/tzmfreedom/nogi/releases/download/v#{@@version}/#{@@binname}"
-    sha256 '0059b5e4cd06f1ad17e08f9ebb6c5fb223f56b26c75f44c98193e91af03bb33b'
+    sha256 '4a81f946cd2417a490248f1a6daef41d535339aa3274f4b875f03b1e3aafc5ba'
   end
 
   def install
